@@ -202,8 +202,8 @@ body{
   })();
   const to = qs.get('to') || 'Luna';
   const from = qs.get('from') || 'Ariel HR';
-  const msg = qs.get('msg') || (n===12 ? `Una docena amarilla para Luna 💛 — de ${from}` :
-                                          `Para ${to}, de parte de ${from} 💛`);
+  const msg = qs.get('msg') || (n===12 ? `Una docena amarilla para ti 💛` :
+                                          `Para Luna, de parte de Ariel 💛`);
   document.getElementById('felicitacion').textContent = msg;
 
   const wrap = document.getElementById('flowers');
