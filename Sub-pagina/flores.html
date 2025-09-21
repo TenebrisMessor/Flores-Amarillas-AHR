@@ -187,7 +187,7 @@ body{
   </template>
 
   <div class="bottom-actions">
-    <a class="btn alt" id="btnBack" href="index2.html">Volver</a>
+    <!-- <a class="btn alt" id="btnBack" href="index2.html">Volver</a> -->
     <a class="btn" id="btnOne"   href="?n=1">1 flor</a>
     <a class="btn" id="btnTri"   href="?n=3">3 flores</a>
     <a class="btn" id="btnDoce"  href="?n=12">12 flores</a>
@@ -202,7 +202,7 @@ body{
   })();
   const to = qs.get('to') || 'Luna';
   const from = qs.get('from') || 'Ariel HR';
-  const msg = qs.get('msg') || (n===12 ? `Una docena amarilla para ${to} 💛 — de ${from}` :
+  const msg = qs.get('msg') || (n===12 ? `Una docena amarilla para Luna 💛 — de ${from}` :
                                           `Para ${to}, de parte de ${from} 💛`);
   document.getElementById('felicitacion').textContent = msg;
 
